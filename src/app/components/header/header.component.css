@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(19, 19, 19);
+  padding: 30px;
+  color: white;
+  margin: 0;
+  width: calc(100% - 200px);
+  position: fixed; 
+  top: 0;
+  left: 200px;
+  z-index: 10;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+nav a {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #f39c12; 
+}

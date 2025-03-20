@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<div *ngIf="mensajeExito" class="mensaje-exito">
+  Producto agregado al carrito con éxito!
+</div>
+
+<main class="contenedor-productos">
+  <h2 class="titulo-centrado">Catálogo de Productos</h2>
+  
+  <div class="productos">
+    <div *ngFor="let producto of productos" class="producto">
+      <img [src]="producto.imagen" alt="{{producto.nombre}}">
+      <h3>{{producto.nombre}}</h3>
+      <p>Precio: ${{producto.precio}} MXN</p>
+      <button (click)="agregarAlCarrito(producto)">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Añadir
+      </button>
+    </div>
+  </div>
+</main>
